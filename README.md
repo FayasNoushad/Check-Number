@@ -27,9 +27,9 @@ print(check_number.is_number('Hello')
 # => {"status": false}
 
 print(check_number.is_numbers(
-    ['+910000000000', '+10000000000']
+    ['+910000000000', '+10000000000', 'Hello']
 )
-# => {"status": true}
+# => ['+910000000000', '+10000000000']
 ```
 
 ---
