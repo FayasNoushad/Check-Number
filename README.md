@@ -21,15 +21,15 @@ pip install Check-Number
 import check_number
 
 print(check_number.is_number('+910000000000')
-# => {"status": True}
+# => {"status": true}
 
 print(check_number.is_number('Hello')
-# => {"status": False}
+# => {"status": false}
 
 print(check_number.is_numbers(
     ['+910000000000', '+10000000000']
 )
-# => {"status": True}
+# => {"status": true}
 ```
 
 ---
