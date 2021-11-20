@@ -1,9 +1,8 @@
 import os
-import pathlib
-from setuptools import setup, find_packages
+import setuptools
 
 
-def requirements(file="requirements.txt") -> list:
+def requirements(file="requirements.txt"):
     if os.path.isfile(file):
         with open(file, encoding="utf-8") as r:
             return [i.strip() for i in r]
@@ -19,21 +18,31 @@ def readme(file="README.md"):
         return ""
 
 
-setup(
+setuptools.setup(
     name="Check-Number",
-    version="1.0.1",
-    author="FayasNoushad",
+    version="1.0.2",
+    description="Number Checker",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    description="A number checker python module",
-    license="MIT",
     url="https://github.com/FayasNoushad/Check-Number",
+    download_url="https://github.com/FayasNoushad/Check-Number/releases/latest",
+    license="MIT",
+    author="Fayas Noushad",
+    author_email="contact@fayas.me",
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Intended Audience :: Developers",
+        "Natural Language :: English",
+        "Programming Language :: Python",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+        "Operating System :: OS Independent"
     ],
-    packages=find_packages(),
-    install_requires=requirements(),
-    python_requires=">=3.6"
+    project_urls={
+        "Tracker": "https://github.com/FayasNoushad/Check-Number/issues",
+        "Source": "https://github.com/FayasNoushad/Check-Number",
+        "Documentation": "https://check-number.projects.fayas.me",
+    },
+    python_requires=">=3.6",
+    packages=setuptools.find_packages(),
+    zip_safe=False,
+    install_requires=requirements()
 )
