@@ -7,8 +7,6 @@ Python number checker
 pip install Check-Number
 ```
 
----
-
 ## Usage
 
 ```py
@@ -25,11 +23,3 @@ print(check_number.is_numbers(
 )
 # => ['+910000000000', '+10000000000']
 ```
-
----
-
-## Credits
-
-- [Fayas Noushad](https://github.com/FayasNoushad)
-
----
