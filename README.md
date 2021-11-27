@@ -1,11 +1,5 @@
-```
-Made with Python3
-(C) @FayasNoushad
-Copyright permission under MIT License
-License -> https://github.com/FayasNoushad/Check-Number/blob/main/LICENSE
-```
-
----
+# Check Number
+Python number checker
 
 ## Installation
 
