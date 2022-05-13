@@ -12,7 +12,7 @@ pip install Check-Number
 ```py
 import check_number
 
-print(check_number.is_number('+910000000000')
+print(check_number.is_number('+910000000000'))
 # => {"status": true}
 
 print(check_number.is_number('Hello')

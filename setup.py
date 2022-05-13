@@ -12,7 +12,7 @@ def requirements(file="requirements.txt"):
 
 def readme(file="README.md"):
     if os.path.isfile(file):
-        with open(file, encoding="utf8") as r:
+        with open(file, encoding="utf-8") as r:
             return r.read()
     else:
         return ""
@@ -20,7 +20,7 @@ def readme(file="README.md"):
 
 setuptools.setup(
     name="Check-Number",
-    version="1.0.3",
+    version="1.0.4",
     description="Number Checker",
     long_description=readme(),
     long_description_content_type="text/markdown",
